@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "84467756146",
+    "firebase_url": "https://cs461peerproject.firebaseio.com",
+    "project_id": "cs461peerproject",
+    "storage_bucket": "cs461peerproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:84467756146:android:218e4e751bdd5f61",
+        "android_client_info": {
+          "package_name": "com.example.reema.cs461peerproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "84467756146-9dp5fld9r2a0c8qfngbjkjiaeojbu9ks.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.reema.cs461peerproject",
+            "certificate_hash": "3df838cda4636df743333ccfc62c1e0a5c020d18"
+          }
+        },
+        {
+          "client_id": "84467756146-hga8bc0oa5gt5kukgruk1qjs854aat1o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJWnOf_LGecq1BNzMmpB2PyVwlNqWbiN8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "84467756146-hga8bc0oa5gt5kukgruk1qjs854aat1o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
