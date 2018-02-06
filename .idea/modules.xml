@@ -3,9 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CS4261PeerProject.iml" filepath="$PROJECT_DIR$/CS4261PeerProject.iml" />
-      <module fileurl="file://C:\Users\reema.ASUS\Documents\FALL 2017\LMC2110\CS4261PeerProject\CS4261PeerProject.iml" filepath="C:\Users\reema.ASUS\Documents\FALL 2017\LMC2110\CS4261PeerProject\CS4261PeerProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Users\reema.ASUS\Documents\FALL 2017\LMC2110\CS4261PeerProject\app\app.iml" filepath="C:\Users\reema.ASUS\Documents\FALL 2017\LMC2110\CS4261PeerProject\app\app.iml" />
     </modules>
   </component>
 </project>

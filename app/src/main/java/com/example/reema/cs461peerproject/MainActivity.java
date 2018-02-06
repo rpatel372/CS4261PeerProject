@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -51,7 +52,10 @@ public class MainActivity extends AppCompatActivity {
                     for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                         if (count == index) {
                             String theMessage = snapshot.getValue().toString();
-                            System.out.println(theMessage);
+
+                            //do something with message here
+                            final TextView textView =(TextView)findViewById(R.id.textView);
+                            textView.setText(theMessage);
                             return;
                         }
                         count++;
