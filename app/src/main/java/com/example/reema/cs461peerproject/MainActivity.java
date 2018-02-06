@@ -11,6 +11,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.Random;
+
 import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
 public class MainActivity extends AppCompatActivity {
@@ -31,7 +39,31 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void displayMessage() {
+    public void displayMessage(View view) {
+        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("posts");
+        databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                if (dataSnapshot != null) {
+                    Random random = new Random();
+                    int index = random.nextInt((int) dataSnapshot.getChildrenCount());
+                    int count = 0;
+                    for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                        if (count == index) {
+                            String theMessage = snapshot.getValue().toString();
+                            System.out.println(theMessage);
+                            return;
+                        }
+                        count++;
+                    }
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
 
     }
 

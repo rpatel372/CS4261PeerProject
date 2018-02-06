@@ -57,9 +57,9 @@ public class DisplayMessageActivity extends AppCompatActivity {
         // [START initialize_database_ref]
         mDatabase = FirebaseDatabase.getInstance().getReference();
         //System.out.println(mDatabase);
-        messages = mDatabase.child("messages");
+        messages = mDatabase.child("posts");
 
-        messages.setValue(message);
+        messages.push().setValue(message);
 
 
         startActivity(intent);
